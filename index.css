@@ -1,0 +1,89 @@
+* {
+    font-family: 'Bitter', serif;
+}
+
+body, main {
+  margin: 0;
+  padding: 0;
+}
+
+section, footer {
+  margin: 15px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eee;
+  padding: 15px;
+  margin: 0;
+}
+
+header > div.inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header > div.inner > img {
+  max-width: 100%;
+  height: auto;
+}
+
+header > div.inner > h1 {
+  margin: 15px 0 0 0;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 7vw;
+}
+
+h2 {
+  font-size: 5vw;
+  line-height: 7vw;
+}
+
+p, li {
+  font-size: 14px;
+  line-height: 30px;
+}
+
+ul {
+  padding-left: 1em;
+}
+
+@media (min-width: 550px) {
+  header {
+    margin: 0 0 25px 0;
+  }
+
+  header > div.inner {
+    max-width: 500px;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  header > div.inner > h1 {
+    margin: 0 0 10px 15px;
+  }
+
+  section, footer {
+    max-width: 500px;
+    margin: 15px auto;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+}
